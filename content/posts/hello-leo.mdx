@@ -1,0 +1,81 @@
+---
+title: Hello Leo!
+description: Getting started with Leo
+date: "2024-07-01"
+---
+
+This guide will walk you through installing and running Leo, a programming language, on your computer. Leo is still under development, so to use its latest features, we'll install it directly from its source code.
+
+## Prerequisites:
+
+To get the most out of this project, the following are required:
+
+- **Git**: Run `git --version` to verify you have git on your system. If not, install it from git [official documentation](https://git-scm.com/downloads).
+- **Rust**: This is the programming language Leo itself is written in. Don't worry, you won't need to know Rust to use Leo! Install rust here[https://www.rust-lang.org/tools/install]
+
+## Build Leo from Source Code
+
+Now that you have the prerequisites, you can build and install Leo from its source code.
+
+To download the source code on your terminal run the follow code
+
+```
+git clone https://github.com/AleoHQ/leo
+```
+
+Next change directory, run
+
+```
+cd leo
+```
+
+Now that you are in the leo directory, to build the leo from the source code and install the executable`~/.cargo/bin/leo` in your system, run
+
+```
+cargo install --path .
+```
+
+To start using Leo, run the following command
+
+```
+leo
+```
+
+If everything went well, Leo should launch and you'll see its interface as seen below.
+
+<Image src="/initial-leo.png" width="718" height="404" alt="Image" />
+
+## HELLO LEO
+
+Now that you have Leo installed, let's create a simple program to get started.
+Create a new Leo Project
+Use the Leo Command Line Interface (CLI) to create a new project by running the command below on your terminal
+
+```
+leo new hello
+```
+
+This creates a new directory called "hello" with all the essential files for a Leo project which looks like the image below.
+
+<Image src="/project-setup.png" width="718" height="404" alt="Image" />
+
+Next, navigate into your directory
+
+```
+cd hello
+```
+
+Run the command below to build and execute your code
+
+```
+leo run main 1u32 2u32
+```
+
+Your output should look like the image below.
+
+<Image src="/terminal-output.png" width="718" height="404" alt="Image" />
+Congratulations! You've successfully created and ran your first Leo program
+
+---
+
+To learn more on Leo visit [Here](https://developer.aleo.org/leo)
