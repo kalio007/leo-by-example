@@ -15,7 +15,7 @@ async function getPostFromParams(params: PostProps["params"]) {
   const post = allPosts.find((post) => post.slugAsParams === slug);
 
   if (!post) {
-    return null; 
+    return null;
   }
 
   return post;
@@ -27,7 +27,7 @@ export async function generateMetadata({
   const post = await getPostFromParams(params);
 
   if (!post) {
-    return {}; 
+    return {};
   }
 
   return {
